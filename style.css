@@ -128,6 +128,18 @@ header .logo {
 
 #why-wadiia .reasons {
   display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+#why-wadiia .reasons .reason {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 150px;
 }
 
 #why-wadiia .reasons .reason:nth-child(1) > i {
@@ -140,7 +152,7 @@ header .logo {
 
 #why-wadiia .reasons .reason:nth-child(2) span {
   border: 2px solid gold;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
 }
 #why-wadiia .reasons .reason:nth-child(2) span > i {
@@ -154,10 +166,85 @@ header .logo {
   padding: 10px;
   border: 2px solid green;
   border-radius: 100%;
-  color: rgb(31, 31, 97);
+  color: green;
   font-size: 25px;
 }
 
+#why-wadiia .reasons .reason:nth-child(4) > i {
+  padding: 10px;
+  border: 2px solid #eb2533;
+  border-radius: 100%;
+  color: #eb2533;
+  font-size: 25px;
+}
+
+#destinations {
+  width: fit-content;
+  background-image: url("/public/images/1\ 23456801.png");
+  background-color: white;
+}
+
+#destinations .destination-list {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+#destinations .destinations-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#destinations .destination-card {
+  width: 300px;
+  box-shadow: 5px 5px 15px grey;
+  cursor: pointer;
+  position: relative;
+}
+
+#destinations .destination-card .destination-card-sticker {
+  position: absolute;
+  display: flex;
+  background-color: gold;
+  padding: 5px;
+  right: -2px;
+  top: 10px;
+}
+
+#destinations .destination-card .destination-card-sticker .ele1 {
+  position: absolute;
+
+  top: 5px;
+  left: -9px;
+  height: 20px;
+  width: 20px;
+}
+#destinations .destination-card img {
+  width: 300px;
+}
+#destinations .destination-card .destination-card-footer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#destinations .destination-card .destination-card-footer .destination-location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#destinations
+  .destination-card
+  .destination-card-footer
+  .destination-location
+  .destination-country {
+  color: blue;
+}
 button {
   cursor: pointer;
 }
@@ -170,4 +257,22 @@ button {
   border-radius: 4px;
   color: white;
   font-size: 12px;
+}
+
+.link {
+  color: #eb2533;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-btn {
+  width: fit-content;
+  color: white;
+  background-color: #eb2533;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
 }
