@@ -1,0 +1,173 @@
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+.divider {
+  background-color: white;
+}
+
+.hero {
+  background-color: grey;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  background-color: red;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.header-menu ul li {
+  cursor: pointer;
+}
+
+.header-menu hr {
+  height: 20px;
+  width: 1px;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hero .hero-search {
+  width: fit-content;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 2.5px;
+}
+.hero .hero-search input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: white;
+  text-decoration: solid;
+}
+
+.hero .hero-search input::placeholder {
+  color: white;
+}
+.hero .fa-search {
+  color: white;
+}
+
+.hero-products {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-products-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.hero .hero-intro {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.hero .hero-intro h1 {
+  font-size: 40px;
+}
+
+.hero .hero-intro p {
+  text-align: center;
+  font-size: 27px;
+}
+
+.hero .products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products .products-tabs {
+  display: flex;
+}
+
+.products .products-tabs .product-tab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+.products .products-tabs .product-tab.active {
+  background-color: blue;
+  color: white;
+}
+
+.products .products-tabs .product-tab.active > i {
+  color: #eb2533;
+}
+
+#why-wadiia {
+  background-color: white;
+  padding: 50px;
+}
+
+#why-wadiia .reasons {
+  display: flex;
+}
+
+#why-wadiia .reasons .reason:nth-child(1) > i {
+  padding: 10px;
+  border: 2px solid rgb(31, 31, 97);
+  border-radius: 100%;
+  color: rgb(31, 31, 97);
+  font-size: 25px;
+}
+
+#why-wadiia .reasons .reason:nth-child(2) span {
+  border: 2px solid gold;
+  padding: 15px;
+  border-radius: 50%;
+}
+#why-wadiia .reasons .reason:nth-child(2) span > i {
+  color: white;
+  padding: 5px;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+#why-wadiia .reasons .reason:nth-child(3) > i {
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 100%;
+  color: rgb(31, 31, 97);
+  font-size: 25px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #eb2533;
+  outline: none;
+  border: 0;
+  padding: 7px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
