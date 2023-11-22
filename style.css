@@ -245,6 +245,75 @@ header .logo {
   .destination-country {
   color: blue;
 }
+
+#more-wadiia {
+  background-color: white;
+  padding: 50px;
+}
+
+#more-wadiia .more-of-wadiia {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+#more-wadiia .more-of-wadiia .wadiia-more-card:nth-child(1) {
+  position: relative;
+  padding: 20px;
+  width: fit-content;
+  height: 300px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#more-wadiia .more-of-wadiia .wadiia-more-card:nth-child(2) {
+  position: relative;
+  padding: 20px;
+  width: fit-content;
+  height: 300px;
+  border: 1px solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#more-wadiia .more-of-wadiia .wadiia-more-card:nth-child(3) {
+  position: relative;
+  padding: 20px;
+  width: fit-content;
+  height: 300px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#more-wadiia .wadiia-more-card .wadiia-more-card-info {
+  display: block;
+  margin-top: 20px;
+}
+#more-wadiia .wadiia-more-card .wadiia-more-img {
+  position: absolute;
+  top: -15%;
+  left: 30%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: silver;
+}
+#more-wadiia .wadiia-more-card p {
+  text-align: center;
+  width: 200px;
+}
 button {
   cursor: pointer;
 }
@@ -275,4 +344,20 @@ button {
   text-align: center;
   padding: 5px;
   border-radius: 5px;
+}
+
+.link-btn-secondary {
+  background-color: white;
+  color: #eb2533;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid #eb2533;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.link-btn-secondary:hover {
+  background-color: #eb2533;
+  color: white;
 }
