@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  transition: 0.5s ease-out;
+}
+
+form input:focus {
+  border: 1px solid brown;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+form button {
+  background-color: brown;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form p a {
+  color: brown;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form p a:hover {
+  text-decoration: underline;
+}

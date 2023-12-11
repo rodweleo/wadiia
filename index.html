@@ -10,25 +10,50 @@
     <title>Wadiia | Africa Trusted Travel Brand</title>
   </head>
   <body>
-    <main>
-      <section id="home" class="hero">
+    <section id="home" class="hero">
+      <div class="hero-container">
         <header>
           <img src="/public/images/wadiia white logo .svg" alt="" />
           <div class="header-menu">
             <ul>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-linkedin-in"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-pinterest-p"></i></li>
-              <li><i class="fa-brands fa-youtube"></i></li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/facebook.png"
+                  alt="Facebook" />
+              </li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/twitter.png"
+                  alt="Twitter" />
+              </li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/LinkedIn Icon Main 1.png"
+                  alt="LinkedIn" />
+              </li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/Instagram-Icon 1.png"
+                  alt="Instagram" />
+              </li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/pintrest.png"
+                  alt="P-Interest" />
+              </li>
+              <li>
+                <img
+                  src="/public/images/social_links_icons/YT icon 1.png"
+                  alt="YouTube" />
+              </li>
             </ul>
             <hr />
-            <button class="btn-primary">
+            <a href="login.html" class="btn-primary">
               <i class="fa-solid fa-users"></i> SIGN IN / SIGN UP
-            </button>
+            </a>
           </div>
         </header>
+        <hr />
         <div class="hero-products">
           <div class="hero-search">
             <input
@@ -38,9 +63,9 @@
             <i class="fa-solid fa-search"></i>
           </div>
           <ul class="hero-products-list">
-            <li>Flights |</li>
-            <li>&nbsp;Deals |&nbsp;</li>
-            <li>Activities</li>
+            <li>Flights &nbsp; | &nbsp;</li>
+            <li>&nbsp;Deals &nbsp; | &nbsp;</li>
+            <li>&nbsp;Activities</li>
           </ul>
         </div>
 
@@ -49,7 +74,7 @@
           <p>Our mission is to make travel <br />easy, convenient and fun</p>
         </div>
 
-        <section class="products">
+        <div class="products">
           <div class="products-tabs">
             <span class="product-tab active"
               ><i class="fa-solid fa-plane"></i>FLIGHTS</span
@@ -58,44 +83,107 @@
               ><i class="fa-solid fa-hotel"></i>HOTELS</span
             >
           </div>
-        </section>
 
-        <section id="why-wadiia">
-          <h2>Why Book flights with Wadiia ?</h2>
-
-          <div class="reasons">
-            <div class="reason">
-              <i class="fa-solid fa-handshake"></i>
-
-              <p>We're always here for you.</p>
+          <form id="flights" action="flight-list.html">
+            <div id="flights-header">
+              <select name="trips" id="trips">
+                <option value="">Round Trip</option>
+              </select>
+              <select name="economy" id="economy">
+                <option value="">Premium Economy</option>
+              </select>
+              <select name="travellers" id="travellers">
+                <option value="">1 Traveller</option>
+              </select>
             </div>
 
-            <div class="reason">
-              <span>
-                <i class="fa-solid fa-dollar"></i>
-              </span>
-              <p>We provide the most bang for your buck.</p>
+            <div id="locations">
+              <div id="from">
+                <span>From</span>
+                <div>
+                  <input
+                    type="text"
+                    name="from"
+                    id="from"
+                    placeholder="City / Airport name" />
+                  <i
+                    class="fa-solid fa-plane-departure"
+                    style="color: #eb2533"></i>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <div id="to">
+                <span>To</span>
+                <div>
+                  <input
+                    type="text"
+                    name="to"
+                    id="to"
+                    placeholder="City / Airport name" />
+                  <i
+                    class="fa-solid fa-plane-arrival"
+                    style="color: #eb2533"></i>
+                </div>
+              </div>
+            </div>
+            <div id="dates">
+              <div id="departure-date">
+                <label for="departure-date-input">Departure Date</label>
+                <input
+                  type="date"
+                  name="departure-date"
+                  id="departure-date-input" />
+              </div>
+              <div id="return-date">
+                <label for="return-date-input">Return Date</label>
+                <input type="date" name="return-date" id="return-date-input" />
+              </div>
             </div>
 
-            <div class="reason">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <p>We're always here for you.</p>
-            </div>
+            <button class="btn-primary">
+              BOOK NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="why-wadiia">
+      <h2>Why Book flights with Wadiia ?</h2>
 
-            <div class="reason">
-              <i class="fa-solid fa-business-time"></i>
-              <p>We work quickly to resolve your travel needs.</p>
-            </div>
-          </div>
-        </section>
+      <div class="reasons">
+        <div class="reason">
+          <i class="fa-solid fa-handshake"></i>
+          <p>We're always here for you.</p>
+        </div>
 
-        <section id="destinations">
-          <div class="destinations-header">
-            <h2>Popular Destinations</h2>
-            <a href="#" class="link"
-              >Show More <i class="fa-solid fa-angles-right"></i
-            ></a>
-          </div>
+        <div class="reason">
+          <span>
+            <i class="fa-solid fa-dollar"></i>
+          </span>
+          <p>We provide the most bang for your buck.</p>
+        </div>
+
+        <div class="reason">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <p>We're always here for you.</p>
+        </div>
+
+        <div class="reason">
+          <i class="fa-solid fa-business-time"></i>
+          <p>We work quickly to resolve your travel needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <div class="destinations">
+        <div class="destinations-header">
+          <h2>Popular Destinations</h2>
+          <a href="#" class="link"
+            >Show More <i class="fa-solid fa-angles-right"></i
+          ></a>
+        </div>
+        <div class="destination-container">
           <div class="destination-list">
             <div class="destination-card">
               <div class="destination-card-sticker">
@@ -162,57 +250,334 @@
               </div>
             </div>
           </div>
-        </section>
+          <a href="" class="btn-primary">
+            <i class="fa-solid fa-table-cells-large"></i> VIEW ALL</a
+          >
+        </div>
+      </div>
+      <img src="/public/images/Rectangle 1104.png" alt="" />
+    </section>
 
-        <section id="more-wadiia">
-          <h2>More of Wadiia</h2>
-          <div class="more-of-wadiia">
-            <div class="wadiia-more-card">
-              <div class="wadiia-more-img"></div>
-              <div class="wadiia-more-card-info">
-                <h3>Travel Stories</h3>
-                <p>
-                  Read inspiring travel experiences tales of life-changing
-                  journey to amazing destination, featuring immersive travel
-                  guides and tips for your next holiday.
-                </p>
-              </div>
-              <a href="" class="link-btn-secondary">Get Inspired</a>
-            </div>
-
-            <div class="wadiia-more-card">
-              <div class="wadiia-more-img"></div>
-              <div class="wadiia-more-card-info">
-                <h3>Travel Toolkit</h3>
-                <p>
-                  Need help planning your next trip or holiday? Ourtravel
-                  toolkit features all our exclusive product and services to
-                  help you get started and ensure that everything regarding your
-                  trip run as smoothly as possible.
-                </p>
-              </div>
-              <a href="" class="link-btn-secondary">Get Started</a>
-            </div>
-
-            <div class="wadiia-more-card">
-              <div class="wadiia-more-img"></div>
-              <div class="wadiia-more-card-info">
-                <h3>Travel FAQs</h3>
-                <p>
-                  Get answers to the frequently asked questions on flights,
-                  airline tickets, COVID-19 travel, general topic on
-                  cancellation, payment and refund, visas, check-in etc.
-                </p>
-              </div>
-              <a href="" class="link-btn-secondary">Get Answers</a>
-            </div>
+    <section id="more-wadiia">
+      <h2>More of Wadiia</h2>
+      <div class="more-of-wadiia">
+        <div class="wadiia-more-card">
+          <img src="/public/images/1 23456804.png" alt="" />
+          <div class="wadiia-more-card-info">
+            <h3>Travel Stories</h3>
+            <p>
+              Read inspiring travel experiences tales of life-changing journey
+              to amazing destination, featuring immersive travel guides and tips
+              for your next holiday.
+            </p>
           </div>
-        </section>
+          <a href="" class="link-btn-secondary">Get Inspired</a>
+        </div>
 
-        <section id="travel-countries"></section>
-      </section>
-      <hr class="divider" />
-    </main>
+        <div class="wadiia-more-card">
+          <img src="/public/images/2 11.png" alt="" />
+          <div class="wadiia-more-card-info">
+            <h3>Travel Toolkit</h3>
+            <p>
+              Need help planning your next trip or holiday? Ourtravel toolkit
+              features all our exclusive product and services to help you get
+              started and ensure that everything regarding your trip run as
+              smoothly as possible.
+            </p>
+          </div>
+          <a href="" class="link-btn-secondary">Get Started</a>
+        </div>
+
+        <div class="wadiia-more-card">
+          <img src="/public/images/3 2.png" alt="" />
+          <div class="wadiia-more-card-info">
+            <h3>Travel FAQs</h3>
+            <p>
+              Get answers to the frequently asked questions on flights, airline
+              tickets, COVID-19 travel, general topic on cancellation, payment
+              and refund, visas, check-in etc.
+            </p>
+          </div>
+          <a href="" class="link-btn-secondary">Get Answers</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel-countries">
+      <h2>Countries Open for Travel</h2>
+
+      <div class="country-list">
+        <div class="countries"></div>
+        <div class="travel-btns">
+          <button>
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="carousel">
+            <div class="dotactive"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <button>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="dest-image">
+      <img src="/public/images/bg1.png" alt="" />
+    </section>
+    <footer>
+      <div class="footer-header">
+        <div class="footer-container">
+          <h4>Top Cities</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to London</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Dubai</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to New York
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Delhi
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Lagos
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Cape Town
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Mumbai
+              </a>
+            </li>
+          </ul>
+          <button class="btn-secondary">ALL CITIES</button>
+        </div>
+        <div class="footer-container">
+          <h4>Top Airlines</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >British Airways</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >South African Airways</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Turkish Airlines
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Kenya Airways
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Delta Airlines
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Emirates
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Ethiopian Airlines
+              </a>
+            </li>
+          </ul>
+          <a href="" id="all-airlines"
+            >ALL AIRLINES <i class="fa-solid fa-angles-right"></i
+          ></a>
+        </div>
+        <div class="footer-container">
+          <h4>Top Domestic</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Cape Town Flights</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Johannesburg Flights</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Port Elizabeth
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Durban Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >George Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >East London Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Cape Town Flights
+              </a>
+            </li>
+          </ul>
+          <button class="btn-primary">ALL DOMESTIC FLIGHTS</button>
+        </div>
+        <div class="footer-container">
+          <h4>Top Cities</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >London Flights</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >New York Flights</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Abu Dhabi Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Amsterdam Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Lagos Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Nairobi Flights
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Accra Flights
+              </a>
+            </li>
+          </ul>
+          <button class="btn-primary">ALL INT'L FLIGHTS</button>
+        </div>
+        <div class="footer-container">
+          <h4>Company</h4>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >About Wadiia</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Blog
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Lagos
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Cape Town
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Flights to Mumbai
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-footer">
+        <ul class="social-links">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+        <div class="footer-tag">
+          <h4>Save more on your next trip with our great deals</h4>
+          <p>
+            Sign up now to out newsletter for all the latest deals, exclusive
+            offers on flights and more to top destinations worldwide. You don't
+            want to miss out!
+          </p>
+        </div>
+        <form>
+          <div>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name" />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name" />
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="fname"
+            placeholder="Enter Email Address" />
+
+          <button type="submit" class="btn-primary">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

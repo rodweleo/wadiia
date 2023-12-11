@@ -1,0 +1,182 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("/public/images/123456801.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 50px;
+}
+.btn-primary {
+  background-color: #eb2533;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3.5px;
+}
+
+header {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  list-style: decimal;
+  gap: 30px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+aside {
+  width: 22%;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+aside .dropdown-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+aside .dropdown-container .dropdown-menu {
+  line-height: 6vh;
+}
+
+aside .dropdown-container .dropdown-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+aside .dropdown-container .dropdown-btn > i {
+  transform: rotate(-90deg);
+}
+
+aside .dropdown-container .departure-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside .dropdown-container .airline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+aside .dropdown-container .airline .airline-name {
+  text-align: left;
+}
+
+aside .dropdown-container .class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+aside .dropdown-container .class .class-charges {
+  color: #eb2533;
+}
+
+aside .dropdown-container .airline .airline-price {
+  color: #eb2533;
+}
+
+main .main-content {
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+main .why-wadiia {
+  text-align: center;
+  width: 100%;
+}
+
+main .why-wadiia h2 span {
+  color: #eb2533;
+}
+main .why-wadiia .reasons {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .why-wadiia .reasons .reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
+}
+
+main .charges {
+  display: flex;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+main .charges > div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .charges > div:hover {
+  background-color: #6985b6;
+  color: white;
+}
+
+main .charges > div .charge-amount {
+  color: #1a52b6;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+main .charges > div:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+main .charges > div:nth-child(3) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .charges .active {
+  color: white;
+  background-color: #1a52b6;
+}
+
+main .charges .active > span {
+  color: white;
+}
+
+footer {
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="flight-list.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/public/images/wadiia white logo .svg" alt="" />
+
+      <ul>
+        <li>Flight list</li>
+        <i class="fa-solid fa-angle-right"></i>
+        <li>Passenger Info</li>
+        <i class="fa-solid fa-angle-right"></i>
+        <li>Select Add-ons</li>
+        <i class="fa-solid fa-angle-right"></i>
+        <li>Payment</li>
+      </ul>
+
+      <button class="btn-primary">
+        <i class="fa-solid fa-users"></i> SIGN IN / SIGN UP
+      </button>
+    </header>
+
+    <main>
+      <aside>
+        <h5>POPULAR FILTERS</h5>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            STOPS <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              Non-Stop
+            </div>
+            <div>
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              1+ Stop
+            </div>
+            <div>
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              2+ Stops
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            DEPARTURE TIME <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div class="departure-time">
+              <div>
+                <input type="checkbox" name="Non-stop" id="non-stop" />
+                07:00 - 11:59
+              </div>
+              <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="departure-time">
+              <div>
+                <input type="checkbox" name="Non-stop" id="non-stop" />
+                12:00 - 18:59
+              </div>
+              <i class="fa-solid fa-cloud-moon"></i>
+            </div>
+          </div>
+        </div>
+
+        <input type="range" min="0.0" max="100" />
+
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            ARRIVAL TIME <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div class="departure-time">
+              <div>
+                <input type="checkbox" name="Non-stop" id="non-stop" />
+                19:00 - 23:59
+              </div>
+              <i class="fa-solid fa-cloud-moon"></i>
+            </div>
+            <div class="departure-time">
+              <div>
+                <input type="checkbox" name="Non-stop" id="non-stop" />
+                12:00 - 18:59
+              </div>
+              <i class="fa-regular fa-sun"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            AIRLINES <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div class="airline">
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              <img
+                class="airline-logo"
+                src="/public/images/airlines/KL.png"
+                alt=""
+                height="15" />
+              <p class="airline-name">KLM Royal Dutch</p>
+              <span class="airline-price">$1200</span>
+            </div>
+            <div class="airline">
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              <img
+                class="airline-logo"
+                src="/public/images/airlines/KL.png"
+                alt=""
+                height="15" />
+              <p class="airline-name">Delta Airlines</p>
+              <span class="airline-price">$1500</span>
+            </div>
+            <div class="airline">
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              <img
+                class="airline-logo"
+                src="/public/images/airlines/KL.png"
+                alt=""
+                height="15" />
+              <p class="airline-name">Swiss-LX</p>
+              <span class="airline-price">$2200</span>
+            </div>
+            <div class="airline">
+              <input type="checkbox" name="Non-stop" id="non-stop" />
+              <img
+                class="airline-logo"
+                src="/public/images/airlines/KL.png"
+                alt=""
+                height="15" />
+              <p class="airline-name">Virgin Atlantic-VS</p>
+              <span class="airline-price">$1700</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            CABIN CLASSES <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div class="class">
+              <div>
+                <input
+                  type="checkbox"
+                  name="Non-stop"
+                  id="non-stop"
+                  value="economy-class" />
+                Economy Class
+              </div>
+              <span class="class-charges">$1500</span>
+            </div>
+            <div class="class">
+              <div>
+                <input
+                  type="checkbox"
+                  name="Non-stop"
+                  id="non-stop"
+                  value="economy-class" />
+                Business Class
+              </div>
+              <span class="class-charges">$3000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            AIRPORTS <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="dropdown-menu">
+            <div class="airport-location">
+              <h6>In United Kingdom</h6>
+              <div class="airports">
+                <div class="airport">
+                  <input type="checkbox" name="Non-stop" id="non-stop" />
+                  London
+                </div>
+              </div>
+            </div>
+            <div class="airport-location">
+              <h6>In United States</h6>
+              <div class="airports">
+                <div class="airport">
+                  <input type="checkbox" name="Non-stop" id="non-stop" />
+                  New York
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section class="main-content">
+        <section class="why-wadiia">
+          <h2>Why Book flights with <span>Wadiia?</span></h2>
+
+          <div class="reasons">
+            <div class="reason">
+              <i class="fa-solid fa-handshake"></i>
+              <p>We're always here for you.</p>
+            </div>
+
+            <div class="reason">
+              <span>
+                <i class="fa-solid fa-dollar"></i>
+              </span>
+              <p>We provide the most bang for your buck.</p>
+            </div>
+
+            <div class="reason">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p>We follow through on our promises & commitments.</p>
+            </div>
+
+            <div class="reason">
+              <i class="fa-solid fa-business-time"></i>
+              <p>We work quickly to resolve your travel needs.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="charges">
+          <div class="fare-charge active">
+            <h3>Recommended</h3>
+            <span class="charge-amount">$178</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              possimus quam ea eos, quo temporibus maxime itaque similique nobis
+              non, esse rem adipisci, ratione a architecto aliquam molestiae
+              fuga et!
+            </p>
+          </div>
+          <div class="fare-charge">
+            <h3>Lowest Fare</h3>
+            <span class="charge-amount">$78</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              possimus quam ea eos, quo temporibus maxime itaque similique nobis
+              non, esse rem adipisci, ratione a architecto aliquam molestiae
+              fuga et!
+            </p>
+          </div>
+          <div class="fare-charge">
+            <h3>Fastest</h3>
+            <span class="charge-amount">$98</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              possimus quam ea eos, quo temporibus maxime itaque similique nobis
+              non, esse rem adipisci, ratione a architecto aliquam molestiae
+              fuga et!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div>
+        <img src="/public/images/wadiia white logo .svg" alt="" />
+        <p>
+          &copy; Copyright <span id="footer-year-container"></span>. All Rights
+          Reserved .
+        </p>
+      </div>
+    </footer>
+
+    <script src="flight-search.js"></script>
+  </body>
+</html>
