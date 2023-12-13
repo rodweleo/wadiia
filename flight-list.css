@@ -170,6 +170,262 @@ main .charges .active > span {
   color: white;
 }
 
+main .flights {
+  margin-top: 5%;
+}
+
+main .flights .flight {
+  background-color: white;
+  border-left: 3px solid #22bd09;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+main .flights .flight .flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+main .flights .flight .flight-header ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  line-height: 30px;
+}
+
+main .flights .flight .flight-header ul a {
+  text-decoration: none;
+  color: #1a52b6;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+main .flights .flight .flight-header ul .flight-airline-number {
+  font-size: 12px;
+}
+
+main .flights .flight .flight-header .flight-charges {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+main .flights .flight .flight-header > div {
+  display: flex;
+}
+
+main .flights .flight .flight-header > div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .flights .flight .flight-header > div .flight-time,
+.flight-return-time {
+  font-size: 16px;
+}
+
+main .flights .flight .flight-header > div .flight-date,
+.flight-return-date {
+  font-size: 14px;
+}
+main .flights .flight .flight-header > div .flight-stop {
+  font-size: 12px;
+}
+main .flights .flight .flight-header > div .flight-period {
+  border-bottom: 3px solid #22bd09;
+  width: fit-content;
+  transform: scale(1.25);
+  margin-bottom: 2.5px;
+}
+
+main .flights .flight .flight-header > div .flight-class {
+  color: #eb2533;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main .flights .flight .flight-footer .flight-footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+main .flights .flight .flight-footer {
+  color: black;
+  font-weight: bold;
+  opacity: 0.85;
+}
+main .flights .flight .flight-footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+main .flights .flight .flight-footer ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 5%;
+  margin-bottom: auto;
+}
+main .flights .flight .flight-footer ul li {
+  cursor: pointer;
+}
+main .flights .flight .flight-footer ul .active {
+  color: #eb2533;
+  opacity: 0.85;
+  padding: 0 1% 0 1%;
+  padding-bottom: 0.5%;
+  border-bottom: 3px solid #eb2533;
+  font-weight: bold;
+}
+
+main .flights .flight .flight-footer .flight-info {
+  background-color: #efd9122d;
+}
+
+main .flights .flight .flight-footer .flight-info .flight-details {
+  display: flex;
+  flex-direction: column;
+}
+
+main .flights .flight .flight-footer .flight-info .flight-details header {
+  background-color: #1a52b6;
+  color: white;
+  padding: 0% 1%;
+}
+
+main .flights .flight .flight-footer .flight-info .flight-details > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5%;
+}
+
+main .flights .flight .flight-footer .flight-info .flight-details > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  span {
+  color: #eb2533;
+  font-size: 14px;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  .route-sketch {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 150px;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  .route-sketch
+  span {
+  height: 10px;
+  width: 10px;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9999;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  .route-sketch
+  .circle1 {
+  left: 0;
+  bottom: 25%;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  .route-sketch
+  .circle2 {
+  right: 0;
+  bottom: 25%;
+}
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  > div
+  .route-sketch
+  hr {
+  height: 1px;
+  width: 100%;
+  background-color: #aeaeae;
+}
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  .flight-airline,
+.flight-takeoff-info,
+.flight-return-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .flights .flight .flight-footer .flight-info .flight-details > div h3 {
+  color: #eb2533;
+}
+
+main
+  .flights
+  .flight
+  .flight-footer
+  .flight-info
+  .flight-details
+  > div
+  .flight-conduments {
+  display: flex;
+}
 footer {
   margin-top: auto;
   position: relative;
